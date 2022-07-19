@@ -4,11 +4,18 @@ public class Main {
 
     long amount = 1000_60;
     boolean registered = true;
-
-   service.calculate(amount, registered);
-
+    long expected = 30;
 
 
+   long actual  = service.calculate(amount, registered);
+    assertEquals(expected, actual);
+    
+
+
+
+  }
+
+  private static void assertEquals(long expected, long actual) {
   }
 }
 
